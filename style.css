@@ -200,8 +200,15 @@ body {
   text-align: center;
 }
 
-.sub-heading {
+.main-heading {
+  text-align: center;
+  font-size: 3rem; /* Increased size */
   color: white;
+  margin-bottom: 1rem; /* Add space below the heading */
+}
+
+.sub-heading {
+  color: black;
   margin-bottom: 1.5rem; /* Add space below the paragraph */
 }
 
