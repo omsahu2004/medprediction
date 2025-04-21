@@ -12,9 +12,12 @@ body {
 }
 
 .container {
-  margin: 0 auto;
+  width: 90%;
   max-width: 1200px;
-  padding: 0 1rem;
+  margin: auto;
+  padding: 2rem 0;
+  flex: 1;
+  text-align: center;
 }
 
 .header {
@@ -52,13 +55,9 @@ body {
 }
 
 .hero {
-  display: flex;
-  justify-content: center;  /* Horizontal center */
-  align-items: center;      /* Vertical center */
+  background: #e9f5ff;
   text-align: center;
-  height: 100vh;            /* Full viewport height */
-  padding: 2rem;
-  flex-direction: column;
+  padding: 4rem 1rem;
 }
 
 .hero h2 {
