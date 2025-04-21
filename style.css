@@ -200,6 +200,11 @@ body {
   text-align: center;
 }
 
+.sub-heading {
+  color: white;
+  margin-bottom: 1.5rem; /* Add space below the paragraph */
+}
+
 .get-started-btn {
   background: #0077ff;
   color: white;
