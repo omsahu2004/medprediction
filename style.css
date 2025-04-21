@@ -30,7 +30,7 @@ body {
 }
 
 .logo {
-  font-size: 2.5rem;
+  font-size: 3rem;
   color: #0077ff;
   font-weight: 900;
 }
@@ -202,13 +202,13 @@ body {
 
 .main-heading {
   text-align: center;
-  font-size: 2.5rem; /* Increased size */
-  color: white;
+  font-size: 3rem; /* Increased size */
+  color: #0077ff;
   margin-bottom: 0.7rem; /* Add space below the heading */
 }
 
 .sub-heading {
-  color: black;
+  color: #000000;
   margin-bottom: 1.5rem; /* Add space below the paragraph */
 }
 
