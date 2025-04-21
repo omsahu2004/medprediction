@@ -225,7 +225,7 @@ body {
   width: 90%;
   max-width: 1200px;
   margin: auto;
-  padding: 0.5rem 0;
+  padding: 1px 1px;
   flex: 1;
   text-align: center;
 }
