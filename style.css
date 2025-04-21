@@ -55,9 +55,13 @@ body {
 }
 
 .hero {
-  background: #e9f5ff;
+  display: flex;
+  justify-content: center;  /* Horizontal center */
+  align-items: center;      /* Vertical center */
   text-align: center;
-  padding: 4rem 1rem;
+  height: 100vh;            /* Full viewport height */
+  padding: 2rem;
+  flex-direction: column;
 }
 
 .hero h2 {
