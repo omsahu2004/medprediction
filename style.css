@@ -204,12 +204,12 @@ body {
   text-align: center;
   font-size: 2.5rem; /* Increased size */
   color: #0077ff;
-  margin-bottom: 1.5rem; /* Add space below the heading */
+  margin-bottom: 0.7rem; /* Add space below the heading */
 }
 
 .sub-heading {
   color: #000000;
-  margin-bottom: 1.3rem; /* Add space below the paragraph */
+  margin-bottom: 1.5rem; /* Add space below the paragraph */
 }
 
 .get-started-btn {
