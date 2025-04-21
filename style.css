@@ -220,13 +220,3 @@ body {
   text-decoration: none;
   font-weight: 600;
 }
-
-.ansh {
-  width: 90%;
-  max-width: 1200px;
-  margin: auto;
-  padding: 1px 1px;
-  flex: 1;
-  text-align: center;
-}
-
