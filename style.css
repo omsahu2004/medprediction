@@ -251,7 +251,7 @@ body {
   </style>
 </head>
 <body>
-  <div class="result-box">
+  <div class="resultscreen">
     <h2>Your Predicted Disease</h2>
     <p id="result-text">Loading...</p>
   </div>
