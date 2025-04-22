@@ -231,57 +231,96 @@ body {
   text-align: left;
 }
 
-/* Style for nextpage.html */
+.background-overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.6);
+  z-index: -1;
+}
 
-.next-page {
-  background-color: #0088FF;
-  padding: 4rem 2rem;
+.container,
+.result-screen {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  max-width: 500px;
+  width: 90%;
   text-align: center;
 }
 
-.next-page h2 {
-  font-size: 2.2rem;
-  color: #0077ff;
-  margin-bottom: 1.5rem;
+h1,
+h2 {
+  color: #2c3e50;
+  margin-bottom: 1rem;
 }
 
-.next-page p {
-  font-size: 1rem;
-  color: #555;
-  margin-bottom: 2rem;
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
 }
 
-.form-container {
-  max-width: 600px;
-  margin: auto;
-  background: #fff;
-  padding: 2rem;
-  border-radius: 12px;
-  box-shadow: 0 0 15px rgba(0, 119, 255, 0.1);
-}
-
-.form-container input,
-.form-container select,
-.form-container textarea {
+textarea {
   width: 100%;
-  padding: 1rem;
-  margin: 1rem 0;
+  height: 100px;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  border-radius: 10px;
   border: 1px solid #ccc;
-  border-radius: 8px;
+  resize: none;
   font-size: 1rem;
 }
 
-.form-container button {
-  background-color: #0077ff;
-  color: white;
+button {
+  padding: 0.75rem 1.5rem;
   border: none;
-  padding: 1rem 2rem;
   border-radius: 8px;
+  background-color: #3498db;
+  color: white;
   font-size: 1rem;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  margin: 0.5rem;
+  transition: background-color 0.3s;
 }
 
-.form-container button:hover {
-  background-color: #005fcc;
+button:hover {
+  background-color: #2980b9;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 15px;
+  text-align: center;
+  max-width: 400px;
+  width: 90%;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.result-screen p {
+  font-size: 1rem;
+  margin: 1rem 0;
+  color: #34495e;
+}
+
+.well-wish {
+  color: #27ae60;
+  font-weight: bold;
+  margin-top: 1.5rem;
+  font-size: 1.1rem;
 }
