@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+ <html lang="en">
+ <head>
+   <meta charset="UTF-8"/>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+   <title>Prediction Result</title>
+   <style>
+     body {
+       background: #e9f0f7;
+       font-family: 'Segoe UI', sans-serif;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       height: 100vh;
+     }
+ 
+     .result-box {
+       background: white;
+       padding: 40px;
+       border-radius: 20px;
+       box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+       max-width: 500px;
+       text-align: center;
+     }
+ 
+     h2 {
+       color: #007bff;
+     }
+ 
+     p {
+       font-size: 18px;
+       margin-top: 20px;
+     }
+   </style>
+ </head>
+ <body>
+   <div class="result-box">
+     <h2>Your Predicted Disease</h2>
+     <p id="result-text">Loading...</p>
+   </div>
+ 
+   <script>
+     const urlParams = new URLSearchParams(window.location.search);
+     const symptoms = urlParams.get('symptoms')?.toLowerCase() || '';
+ 
+     let result = "Sorry, we couldn't determine the disease.";
+ 
+     if (symptoms.includes("fever") && symptoms.includes("cough")) {
+       result = "You may have the Flu.";
+     } else if (symptoms.includes("headache") && symptoms.includes("nausea")) {
+       result = "You may have a Migraine.";
+     } else if (symptoms.includes("rash") || symptoms.includes("itchy")) {
+       result = "Possible allergic reaction.";
+     } else if (symptoms.includes("chest pain") || symptoms.includes("shortness of breath")) {
+       result = "You might be experiencing heart-related issues.";
+     } else if (symptoms.includes("sore throat") && symptoms.includes("runny nose")) {
+       result = "Likely a Common Cold.";
+ 
+     }
+ 
+     document.getElementById("result-text").innerText = result;
+   </script>
+ </body>
+ </html>
